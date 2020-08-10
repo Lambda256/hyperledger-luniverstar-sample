@@ -72,6 +72,9 @@ public class DemoApplication {
 	private int likeCount = 0;
 
 	public static void main(String[] args) {
+		connectionProfilePath = args[0];
+		chaincodeName = args[1];
+		chaincodeVersion = args[2];
 		SpringApplication.run(DemoApplication.class, args);
 	}
 
@@ -152,7 +155,6 @@ public class DemoApplication {
 	}
 
 	private static void initialize() {
-		connectionProfilePath = "./connection-profile.yaml";
 		File f = new File(connectionProfilePath);
 		try {
 			javax.net.ssl.HttpsURLConnection.setDefaultHostnameVerifier(
