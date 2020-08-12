@@ -55,7 +55,7 @@ public class DemoApplication {
 	private static final long waitTime = 6000;
 	private static String connectionProfilePath;
 
-	private static String channelName = "mychannel";
+	private static String channelName = "channel1";
 	private static String userName = "admin";
 
 	private static String aValue = "funding";
@@ -73,8 +73,9 @@ public class DemoApplication {
 
 	public static void main(String[] args) {
 		connectionProfilePath = args[0];
-		chaincodeName = args[1];
-		chaincodeVersion = args[2];
+		channelName = args[1];
+		chaincodeName = args[2];
+		chaincodeVersion = args[3];
 		SpringApplication.run(DemoApplication.class, args);
 	}
 
