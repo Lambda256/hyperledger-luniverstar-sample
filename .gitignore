@@ -2,3 +2,6 @@
 .mvn/
 node_modules
 .DS_Store
+*.pem
+connection-profile*.json
+
