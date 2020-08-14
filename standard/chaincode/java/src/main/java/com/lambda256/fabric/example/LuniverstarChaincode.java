@@ -25,7 +25,7 @@ public class LuniverstarChaincode extends ChaincodeBase {
         try {
             _logger.info("Init java luniverstar chaincode");
             String func = stub.getFunction();
-            if (!func.equals("init")) {
+            if (!func.equals("Init")) {
                 return newErrorResponse("function other than init is not supported");
             }
             List<String> args = stub.getParameters();
